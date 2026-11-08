@@ -79,7 +79,7 @@ BookSpace/
 - Modal pendaftaran akun.
 
 Akun Login:
-- Email: admin@bookspace.com
+- Email: nadya123@gmail.com
 - Password: 123456
 
 ### B. Dashboard Menu
