@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BookSpace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <main class="login-container">
+
+        <section class="login-box">
+            <h1>BookSpace</h1>
+            <p class="subtitle">Toko Buku Online</p>
+
+            <h2>Selamat Datang!</h2>
+            <p>Silakan login untuk melanjutkan.</p>
+
+            <form id="formLogin">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Masukkan email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Masukkan password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Login
+                </button>
+            </form>
+
+            <div class="login-links">
+                <button type="button" onclick="bukaModal('modalLupa')">
+                    Lupa Password?
+                </button>
+
+                <span>Belum punya akun?</span>
+
+                <button type="button" onclick="bukaModal('modalDaftar')">
+                    Daftar
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal Lupa Password -->
+    <div id="modalLupa" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="tutupModal('modalLupa')">
+                &times;
+            </button>
+
+            <h2>Lupa Password</h2>
+            <p>Masukkan email untuk pemulihan password.</p>
+
+            <form id="formLupa">
+                <label for="emailLupa">Email</label>
+                <input
+                    type="email"
+                    id="emailLupa"
+                    placeholder="Masukkan email"
+                    required
+                >
+
+                <button type="submit" class="btn-primary">
+                    Kirim
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Daftar -->
+    <div id="modalDaftar" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="tutupModal('modalDaftar')">
+                &times;
+            </button>
+
+            <h2>Daftar Akun</h2>
+            <p>Silakan isi data untuk membuat akun.</p>
+
+            <form id="formDaftar">
+                <label for="namaDaftar">Nama Lengkap</label>
+                <input
+                    type="text"
+                    id="namaDaftar"
+                    placeholder="Masukkan nama"
+                    required
+                >
+
+                <label for="emailDaftar">Email</label>
+                <input
+                    type="email"
+                    id="emailDaftar"
+                    placeholder="Masukkan email"
+                    required
+                >
+
+                <label for="passwordDaftar">Password</label>
+                <input
+                    type="password"
+                    id="passwordDaftar"
+                    placeholder="Buat password"
+                    required
+                >
+
+                <button type="submit" class="btn-primary">
+                    Daftar Sekarang
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

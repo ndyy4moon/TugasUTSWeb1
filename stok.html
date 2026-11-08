@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Stok - BookSpace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/stok.js" defer></script>
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <h1>BookSpace</h1>
+        <a href="dashboard.html" class="logout-btn">Kembali</a>
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+            <h2>Informasi Stok / Katalog Buku</h2>
+            <p>Daftar buku yang tersedia di toko BookSpace.</p>
+        </section>
+
+        <section class="stok-container">
+            <h2>Tambah Stok Buku</h2>
+
+            <form id="formStok" class="form-stok">
+                <input type="text" id="judul" placeholder="Judul buku" required>
+                <input type="text" id="penulis" placeholder="Nama penulis" required>
+                <input type="text" id="kategori" placeholder="Kategori buku" required>
+                <input type="number" id="harga" placeholder="Harga buku" min="1" required>
+                <input type="number" id="jumlahStok" placeholder="Jumlah stok" min="0" required>
+
+                <button type="submit" class="btn-primary">
+                    Tambah Buku
+                </button>
+            </form>
+        </section>
+
+        <section class="tabel-container">
+            <h2>Daftar Katalog Buku</h2>
+
+            <div class="table-responsive">
+                <table class="tabel-stok">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Gambar</th>
+                            <th>Judul Buku</th>
+                            <th>Penulis</th>
+                            <th>Kategori</th>
+                            <th>Harga</th>
+                            <th>Stok</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelKatalog">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        <p>&copy; 2026 Universitas Pelita Bangsa</p>
+    </footer>
+
+</body>
+</html>
